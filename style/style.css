@@ -5,7 +5,7 @@ body {
   padding: 0; }
 
 nav {
-  background-color: #1da1f2; }
+  background-color: #081629; }
   nav div > a {
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 5px; }
@@ -15,14 +15,15 @@ header {
   width: 100vw;
   position: sticky;
   top: 0;
-  z-index: 9; }
+  z-index: 9;
+  opacity: 75%; }
 
 nav div div ul li:hover {
   transform: scale(1.1); }
 
 /* texto */
 .main section h2 {
-  color: #050a18;
+  color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   font-size: 2em;
   text-align: center;
@@ -34,9 +35,12 @@ nav div div ul li:hover {
 .main section p {
   text-align: center;
   font-family: "Oxygen", sans-serif;
-  color: #050a18b4; }
+  color: #ffffff; }
 
 /* diseño */
+main {
+  padding-bottom: 25px; }
+
 #main-home section div {
   max-height: 160px;
   max-width: 640px; }
@@ -108,21 +112,26 @@ nav div div ul li:hover {
     #main-home section div div div img {
       height: 360px; } }
 
-footer div div div h5 {
-  font-family: "Ubuntu", sans-serif; }
+footer {
+  background-color: #000000;
+  width: 100vw; }
+  footer div div div h5 {
+    font-family: "Ubuntu", sans-serif;
+    color: #ffffff; }
+  footer div div div h3 {
+    font-family: "Oxygen", sans-serif;
+    color: #ffffff; }
+  footer div div div ul li a {
+    text-decoration: none;
+    color: #8f8f8f; }
+  footer div div div ul #facebook:hover a {
+    color: #385898; }
+  footer div div div ul #instagram:hover a {
+    color: #AF2553; }
+  footer div div div ul #twitter:hover a {
+    color: #1DA1F2; }
+  footer div div div p {
+    color: #ffffff; }
 
-footer div div div h3 {
-  font-family: "Oxygen", sans-serif; }
-
-footer div div div ul li a {
-  text-decoration: none;
-  color: #8f8f8f; }
-
-footer div div div ul #facebook:hover a {
-  color: #385898; }
-
-footer div div div ul #instagram:hover a {
-  color: #AF2553; }
-
-footer div div div ul #twitter:hover a {
-  color: #1DA1F2; }
+body {
+  background-color: #081629; }

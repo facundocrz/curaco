@@ -1,15 +1,16 @@
-$font-primary: 'Ubuntu', sans-serif;
-$font-secondary: 'Oxygen', sans-serif;
-
 footer {
+    background-color: #000000;
+    width: 100vw;
     div {
         div {
             div {
                 h5 {
                     font-family: $font-primary;
+                    color: #ffffff;
                 }
                 h3 {
                     font-family: $font-secondary;
+                    color: #ffffff;
                 }
                 ul {
                     li {
@@ -36,6 +37,9 @@ footer {
                          }
                     }
                 }
+               p {
+                   color: #ffffff;
+               }
             }
         }
     }

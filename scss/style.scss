@@ -3,7 +3,17 @@ body {
     margin: 0;
     padding: 0;
 }
+// variables
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Oxygen', sans-serif;
 
+// imports
 @import "header";
 @import "main";
 @import "footer";
+
+// body
+
+body {
+    background-color: #081629;
+}
