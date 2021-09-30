@@ -1,0 +1,173 @@
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Oxygen', sans-serif;
+$alto-img: 160px;
+$ancho-img:640px;
+
+/* texto */
+
+.main { 
+    section {
+        h2 {
+            color: #050a18;
+            font-family: $font-primary;
+            font-size: 2em;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        iframe {
+            padding: 20px 0 20px 0;
+        }
+        p {
+            text-align: center;
+            font-family: $font-secondary;
+            color: #050a18b4;
+        }
+    }
+}
+
+/* diseño */
+
+#main-home {
+    section {
+        div {
+            max-height: $alto-img;
+            max-width: $ancho-img;
+            div {
+                div {
+                    img {
+                        height: $alto-img;
+                        width: $ancho-img;
+                    }
+                }
+            }
+        }
+    }
+}
+#main-destinos {
+    div {
+        overflow: hidden;
+        position: relative;
+        height: 0;
+        padding-bottom: 80%;
+    }
+    #mapa {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top:0;
+    }
+}
+
+#main-contacto {
+    img {
+        max-height: 75px;
+        max-width: 178px;
+    }
+}
+
+#main-medios {
+    section {
+        div {
+            div {
+                p {
+                    button {
+                        width: 100%;
+                        text-align: center;
+                        color: black;
+                        background-color: white;
+                        border-color: black;
+                        box-shadow: 5px 2px 2px black;
+                        margin-top: 3px;
+                    }
+                    button:hover {
+                        box-shadow: none;
+                    }
+                    button:active {
+                        transform: scale(0.98);
+                    }
+                }
+                div {
+                    div {
+                        span {
+                            a {
+                                text-decoration: none;
+                                color: dodgerblue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* media querie */
+
+@media only screen and (min-width: 450px) {
+    #main-home {
+        h2 {
+            text-align: left;
+        }
+        section {
+            div {
+                max-height: $alto-img + 100px;
+                div {
+                    div {
+                        img {
+                            height: $alto-img + 100px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+    .carousel {
+        max-height: $alto-img + 100px;
+    }
+    #main-medios {
+        section {
+            div {
+                div {
+                    p {
+                        button {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #main-contacto {
+        div {
+            display: flex;
+            flex-flow: row-reverse wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-height: 150px;
+            max-width: 337px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #main-home {
+        section {
+            div {
+                max-height: $alto-img + 200px;
+                div {
+                    div {
+                        img {
+                            height: $alto-img + 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

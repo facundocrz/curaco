@@ -1,0 +1,42 @@
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Oxygen', sans-serif;
+
+footer {
+    div {
+        div {
+            div {
+                h5 {
+                    font-family: $font-primary;
+                }
+                h3 {
+                    font-family: $font-secondary;
+                }
+                ul {
+                    li {
+                        a{
+                        text-decoration: none;
+                        color: rgb(143, 143, 143);
+                        }
+                    }
+                    #facebook:hover {
+                        a {
+                            color: #385898;
+                        }
+                    }
+                    
+                    #instagram:hover {
+                         a {
+                            color: #AF2553;
+                         }
+                    }
+                    
+                    #twitter:hover {
+                         a {
+                            color: #1DA1F2;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
