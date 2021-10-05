@@ -2,8 +2,22 @@ nav {
     background-color: #081629;
     div {
         > a {
-            font-family:'Ubuntu', sans-serif;
+            font-family: $font-primary;
             letter-spacing: 5px;
+            color: #738091;
+        }
+        div {
+            ul {
+                li {
+                    a {
+                        font-family: $font-secondary;
+                        color: #ffffff !important;
+                    }
+                }
+                li:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
@@ -14,16 +28,4 @@ header {
     position: sticky; top: 0;
     z-index: 9;
     opacity: 75%;
-}
-
-nav {
-    div {
-        div {
-            ul {
-                li:hover {
-                    transform: scale(1.1);
-                }
-            }
-        }
-    }
 }

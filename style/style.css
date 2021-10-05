@@ -7,8 +7,14 @@ body {
 nav {
   background-color: #081629; }
   nav div > a {
-    font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 5px; }
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: 5px;
+    color: #738091; }
+  nav div div ul li a {
+    font-family: "Oxygen", sans-serif;
+    color: #ffffff !important; }
+  nav div div ul li:hover {
+    transform: scale(1.1); }
 
 header {
   height: 20%;
@@ -17,9 +23,6 @@ header {
   top: 0;
   z-index: 9;
   opacity: 75%; }
-
-nav div div ul li:hover {
-  transform: scale(1.1); }
 
 /* texto */
 .main section h2 {
@@ -61,18 +64,21 @@ main {
   left: 0;
   top: 0; }
 
-#main-contacto img {
+#main-contacto section div img {
   max-height: 75px;
   max-width: 178px; }
+
+#main-contacto section form label {
+  color: #ffffff; }
 
 #main-medios section div div p button {
   width: 100%;
   text-align: center;
-  color: black;
-  background-color: white;
-  border-color: black;
-  box-shadow: 5px 2px 2px black;
+  font-family: "Oxygen", sans-serif;
   margin-top: 3px; }
+  #main-medios section div div p button img {
+    width: 45px;
+    height: 45px; }
 
 #main-medios section div div p button:hover {
   box-shadow: none; }
@@ -80,9 +86,19 @@ main {
 #main-medios section div div p button:active {
   transform: scale(0.98); }
 
-#main-medios section div div div div span a {
-  text-decoration: none;
-  color: dodgerblue; }
+#main-medios section div div div div {
+  background-color: #0c213f;
+  color: #ffffff; }
+  #main-medios section div div div div span a {
+    text-decoration: none;
+    color: dodgerblue; }
+
+#main-nosotros section p {
+  text-align: left; }
+
+#main-nosotros section h3 {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif; }
 
 /* media querie */
 @media only screen and (min-width: 450px) {
@@ -98,15 +114,15 @@ main {
     text-align: left; } }
 
 @media only screen and (min-width: 768px) {
-  #main-contacto div {
+  #main-contacto section div {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: center;
     align-items: center; }
-  #main-contacto img {
-    max-height: 150px;
-    max-width: 337px;
-    margin-bottom: 20px; }
+    #main-contacto section div img {
+      max-height: 150px;
+      max-width: 337px;
+      margin-bottom: 20px; }
   #main-home section div {
     max-height: 360px; }
     #main-home section div div div img {

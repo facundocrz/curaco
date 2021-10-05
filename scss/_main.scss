@@ -61,9 +61,18 @@ main {
 }
 
 #main-contacto {
-    img {
-        max-height: 75px;
-        max-width: 178px;
+    section {
+        div {
+            img {
+                max-height: 75px;
+                max-width: 178px;
+            }
+        }
+        form {
+            label {
+                color: #ffffff;
+            }
+        }
     }
 }
 
@@ -75,11 +84,12 @@ main {
                     button {
                         width: 100%;
                         text-align: center;
-                        color: black;
-                        background-color: white;
-                        border-color: black;
-                        box-shadow: 5px 2px 2px black;
+                        font-family: $font-secondary;
                         margin-top: 3px;
+                        img {
+                            width: 45px;
+                            height: 45px;
+                        }
                     }
                     button:hover {
                         box-shadow: none;
@@ -90,6 +100,8 @@ main {
                 }
                 div {
                     div {
+                        background-color: #0c213f;
+                        color: #ffffff;
                         span {
                             a {
                                 text-decoration: none;
@@ -99,6 +111,18 @@ main {
                     }
                 }
             }
+        }
+    }
+}
+
+#main-nosotros {
+    section {
+        p {
+            text-align: left;
+        }
+        h3 {
+            color: #ffffff;
+            font-family: $font-primary;
         }
     }
 }
@@ -144,16 +168,18 @@ main {
 
 @media only screen and (min-width: 768px) {
     #main-contacto {
-        div {
-            display: flex;
-            flex-flow: row-reverse wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        img {
-            max-height: 150px;
-            max-width: 337px;
-            margin-bottom: 20px;
+        section {
+            div {
+                display: flex;
+                flex-flow: row-reverse wrap;
+                justify-content: center;
+                align-items: center;
+                img {
+                    max-height: 150px;
+                    max-width: 337px;
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 

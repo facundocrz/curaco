@@ -1,7 +1,7 @@
 {
-  "name": "desafio",
+  "name": "curaco",
   "version": "1.0.0",
-  "description": "",
+  "description": "web de empresa de ómnibus curacó",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
