@@ -15,24 +15,28 @@ footer {
                 ul {
                     li {
                         a{
+                        transition: 500ms;
                         text-decoration: none;
                         color: rgb(143, 143, 143);
                         }
                     }
                     #facebook:hover {
                         a {
+                            transition: 500ms;
                             color: #385898;
                         }
                     }
                     
                     #instagram:hover {
                          a {
+                            transition: 500ms;
                             color: #AF2553;
                          }
                     }
                     
                     #twitter:hover {
                          a {
+                            transition: 500ms;
                             color: #1DA1F2;
                          }
                     }
@@ -40,6 +44,17 @@ footer {
                p {
                    color: #ffffff;
                }
+               div {
+                    button {
+                        transition: 800ms !important;
+                        text-align: center;
+                        font-family: $font-secondary;
+                    }
+                    button:hover {
+                        transition: 800ms;
+                        background-color:#000000 !important;
+                    }
+                }
             }
         }
     }

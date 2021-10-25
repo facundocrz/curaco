@@ -15,8 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <!-- animaciones -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <!-- inicio header -->
@@ -42,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="mediosDePago.html">Medios de pago</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active-li">
                             <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
@@ -56,10 +54,10 @@
     </header>
     <!-- fin header -->
     <!-- inicio main -->
-    <main class="main" id="main-nosotros">
+    <main class="main container" id="main-nosotros">
         <!-- historia -->
         <section class="container">
-            <h2 class="w3-animate-top">Nosotros</h2>
+            <h2 class="fadeInTop">Nosotros</h2>
             <p class="parrafo">
               Los inicios de nuestra empresa se remontan al año 1951 en el cual la empresa curacó s.a comienza sus servicios de viajes en combis entre Buenos Aires y La Plata.
             </p>
@@ -70,11 +68,29 @@
               Con la llegada del 2008 nuestra empresa inicia un proceso de reorganización que abarca entre otros aspectos la renovación y ampliación de nuestro parque móvil. Con esta finalidad se han incorporado a nuestra flota una gran cantidad de unidades cero kilómetro de ultima generación, con todos los adelantos tecnológicos y de seguridad disponibles en el mercado. En cuanto a las terminaciones de los mismos se ha trabajado con empresas carrocerías tanto nacionales como internacionales para brindarles a nuestros pasajeros un servicio de máxima calidad y confort. En su totalidad son unidades equipadas con televisores LCD, DVD, calefacción / aire acondicionado, auto bar y toillete.
             </p>
         </section>
-        <section class="container">
-          <h3 class="w3-animate-right" >Quiénes somos</h3>
+        <section class="container invertir">
+          <h3 class="fadeInRight" >Quiénes somos</h3>
           <p>
             Somos una sociedad anónima de La Plata dedicada al transporte automotor de pasajeros que cuenta con una moderna flota de colectivos integrada por 120 unidades y un número importante de trabajadores que se conjugan cada día para ofrecer a nuestros clientes uno de los servicios más destacados y prestigiosos del país.
           </p>
+        </section>
+        <section class="container d-flex flex-md-row flex-column justify-content-md-between align-items-md-center">
+          <div class="col-md-6">
+            <h4 class="fadeInRight">Visión</h4>
+            <p class="fadeIn">Ser una empresa líder y sustentable que brinde experiencias satisfactorias para el cliente, conectando pueblos y aportando a su desarrollo e integración.</p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="fadeInRight">Valores</h4>
+            <ul class="fadeIn">
+              <li>Honestidad</li>
+              <li>Responsabilidad</li>
+              <li>Trabajo en equipo</li>
+              <li>Compromiso</li>
+              <li>Lealtad</li>
+              <li>Eficiencia</li>
+              <li>Innovación</li>
+            </ul>
+          </div>
         </section>
     </main>
     <!-- fin main -->
@@ -101,7 +117,7 @@
                 <form>
                   <h5>Suscríbite a nuestro newsletter</h5>
                   <p>Recibí ofertas, promociones y mucho más.</p>
-                  <div class="d-flex w-100 gap-2">
+                  <div class="d-flex w-100 gap-2 flex-column flex-md-row">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email">
                     <button class="btn btn-primary" type="button">Suscribirse</button>

@@ -12,9 +12,6 @@ $ancho-img:640px;
             text-align: center;
             letter-spacing: 1px;
         }
-        iframe {
-            padding: 20px 0 20px 0;
-        }
         p {
             text-align: center;
             font-family: $font-secondary;
@@ -53,6 +50,7 @@ main {
     }
     #mapa {
         position: absolute;
+        padding: 20px 0 20px 0;
         height: 100%;
         width: 100%;
         left: 0;
@@ -69,8 +67,30 @@ main {
             }
         }
         form {
+
             label {
                 color: #ffffff;
+            }
+            .form-control {
+                transition: 800ms;
+                background-color: #081629;
+                border-color: #0d6efd;
+                margin: 0;
+                color: #ffffff;
+            }
+            .form-control:hover {
+                transition: 800ms;
+                border-color: #AF2553;
+            }
+            button {
+                transition: 800ms;
+                width: 70px;
+                text-align: center;
+                font-family: $font-secondary;
+            }
+            button:hover {
+                transition: 800ms;
+                background-color: #081629;
             }
         }
     }
@@ -118,13 +138,90 @@ main {
 #main-nosotros {
     section {
         p {
+            font-size: 1.2em;
             text-align: left;
         }
         h3 {
             color: #ffffff;
             font-family: $font-primary;
         }
+        div {
+            h4 {
+                font-size: 1.6em;
+                color: #ffffff;
+            }
+            p {
+                font-size: 1.1em;
+            }
+            ul {
+                list-style-image: url(../media/img/lista.png);
+                li {
+                    color: #ffffff;
+                }
+            }
+        }
     }
+    .invertir {
+        background-color: #ffffff;
+        h3 {
+            color: #081629;
+            font-family: $font-primary;
+        }
+        p {
+            color: #081629;
+        }
+    }
+}
+
+/* keyframes y animaciones */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.fadeIn {
+    animation: fadeIn ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+     }
+}
+
+.fadeInRight {
+    animation: fadeInRight ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+     }
+}
+
+.fadeInTop {
+    animation: fadeInTop ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 /* media querie */
